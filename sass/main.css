@@ -1,0 +1,173 @@
+:root {
+  --color-primary-pale-blue: hsl(225, 100%, 94%);
+  --color-primary-bright-blue: hsl(245, 75%, 52%);
+  --color-very-pale-blue: hsl(225, 100%, 98%);
+  --color-desaturated-blue: hsl(224, 23%, 55%);
+  --color-Dark-blue: hsl(223, 47%, 23%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background-image: url(/images/pattern-background-desktop.svg);
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+body {
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 1.6rem;
+}
+
+body {
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+}
+
+.container {
+  background-color: white;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr min-content;
+      grid-template-rows: 1fr -webkit-min-content;
+      grid-template-rows: 1fr min-content;
+  width: 30rem;
+  border-radius: 10px;
+  -webkit-box-shadow: 6px 19px 17px -4px rgba(0, 0, 0, 0.2);
+          box-shadow: 6px 19px 17px -4px rgba(0, 0, 0, 0.2);
+}
+
+.banner {
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.summary {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2.7rem 3rem;
+  font-size: 1.1rem;
+}
+
+.summary__paragraph {
+  font-size: 1rem;
+  width: 80%;
+  text-align: center;
+  color: var(--color-desaturated-blue);
+  margin-top: 1.5rem;
+}
+
+.summary__heading {
+  font-size: 1.8rem;
+  color: var(--color-Dark-blue);
+}
+
+.annual-plan {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: var(--color-very-pale-blue);
+  -ms-flex-item-align: stretch;
+      align-self: stretch;
+  padding: 1.5rem;
+  border-radius: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 1.7rem;
+  margin-top: 1.7rem;
+}
+
+.annual-plan__icon {
+  width: 3.5rem;
+  height: 3.5rem;
+}
+
+.annual-plan__details {
+  margin-right: auto;
+  margin-left: 1.5rem;
+}
+
+.annual-plan__text {
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.annual-plan__price {
+  color: var(--color-desaturated-blue);
+  margin-top: 0.3rem;
+  font-size: 1rem;
+}
+
+.annual-plan__btn {
+  border: none;
+  background-color: transparent;
+  color: var(--color-primary-bright-blue);
+  text-decoration: underline;
+  font-size: 1rem;
+}
+
+.annual-plan__btn:active, .annual-plan__btn:hover {
+  -webkit-filter: brightness(200%);
+          filter: brightness(200%);
+  text-decoration: none;
+}
+
+.btn {
+  -ms-flex-item-align: stretch;
+      -ms-grid-row-align: stretch;
+      align-self: stretch;
+  padding: 1rem;
+  color: #fff;
+  border-radius: 10px;
+  border: none;
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 1rem;
+}
+
+.btn:nth-of-type(1) {
+  margin-bottom: 1rem;
+}
+
+.primary-btn {
+  background-color: var(--color-primary-bright-blue);
+  -webkit-box-shadow: 6px 19px 17px -4px rgba(0, 0, 0, 0.2);
+          box-shadow: 6px 19px 17px -4px rgba(0, 0, 0, 0.2);
+}
+
+.primary-btn:active, .primary-btn:hover {
+  -webkit-filter: brightness(200%);
+          filter: brightness(200%);
+}
+
+.secondary-btn {
+  background-color: transparent;
+  color: var(--color-desaturated-blue);
+}
+
+.secondary-btn:active, .secondary-btn:hover {
+  color: var(--color-Dark-blue);
+}
+/*# sourceMappingURL=main.css.map */
